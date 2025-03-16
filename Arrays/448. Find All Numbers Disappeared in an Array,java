@@ -1,0 +1,51 @@
+//2 methods- cycle sort and using hashset
+
+//cycle sorting. best method with O(n) TC and O(1) SC
+
+import java.util.*;
+class Solution {
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        int n= nums.length;
+        ArrayList<Integer> ans = new ArrayList<>();
+        int i=0;
+        while(i<n){
+            int correct= nums[i]-1;
+            if(nums[i]!= nums[correct]){
+                nums[i]= nums[i]^nums[correct];
+                nums[correct]= nums[i]^nums[correct];
+                nums[i]= nums[i]^nums[correct];
+            }
+            else{
+                i++;
+            }
+        }
+        for(i=0; i<n; i++){
+            if(nums[i]!=i+1){
+                ans.add(i+1);
+            }
+        }
+        return ans;
+    }
+}
+
+
+// using HashSet. betetr approach with O(n) TC and O(n) SC
+
+import java.util.*;
+class Solution {
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        // int i, j=0;
+        int n=nums.length;
+        ArrayList<Integer> res= new ArrayList<>();
+        HashSet<Integer> set= new HashSet<>();
+        for(int num : nums){
+            if(!set.contains(num)) set.add(num);
+        }
+        for(int i=1; i<=n; i++){
+            if(!set.contains(i)){
+                res.add(i);
+            }
+        }
+        return res;
+    }
+}
