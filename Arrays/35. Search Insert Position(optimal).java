@@ -1,3 +1,6 @@
+//optimal solution with O(logn) time complexity
+//binary search
+
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int n= nums.length;
