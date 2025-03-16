@@ -4,7 +4,7 @@ class Solution {
         int l=0, u=n-1, mid=0;
     
         while(l<=u){
-            mid=l+(u-l)/2; //// avoids overflow
+            mid=l+(u-l)/2; // avoids overflow
             if(nums[mid]==target){
                 return mid;
             }
