@@ -15,3 +15,8 @@ class Solution {
     return profit;
     }
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// this approach is called two pointer approach
+// Kadane's algorithm approach is better than this
