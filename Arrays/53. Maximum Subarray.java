@@ -1,4 +1,4 @@
-//KADANE's ALGORITHM
+//KADANE's ALGORITHM.
 
 class Solution {
     public int maxSubArray(int[] nums) {

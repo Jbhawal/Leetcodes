@@ -10,7 +10,7 @@ for /f "tokens=1-3 delims=/" %%a in ('date /t') do (
 set "today=%YYYY%-%MM%-%DD%"
 
 git add .
-git commit -m "Leet soln for Max Sum of Subarray usingKADANE'S ALGO on %today%."  
+git commit -m "Update Leetcode solution on %today%"
 git push origin main
 
 echo LeetCode solutions pushed to GitHub successfully!
