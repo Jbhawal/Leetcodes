@@ -1,6 +1,8 @@
 //better solution with O(n) time complexity and O(n) space complexity
 // using hashmap
 
+import java.util.HashMap;
+
 class Solution {
     public int firstMissingPositive(int[] nums) {
         int n= nums.length;
