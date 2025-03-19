@@ -1,3 +1,5 @@
+//this is brute force approach. it has time complexity of O(m+n) and space complexity of O(m+n)
+
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m= nums1.length;
