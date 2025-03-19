@@ -1,22 +1,3 @@
-@REM @echo off
-@REM cd /d/JB/Leetcodes
-
-@REM REM Get the current date in YYYY-MM-DD format
-@REM for /f "tokens=1-3 delims=/" %%a in ('date /t') do (
-@REM     set "MM=%%a"
-@REM     set "DD=%%b"
-@REM     set "YYYY=%%c"
-@REM )
-@REM set "today=%YYYY%-%MM%-%DD%"
-
-@REM git add .
-@REM git commit -m "Update Leetcode solution on %today%"
-@REM git push origin main
-
-@REM echo LeetCode solutions pushed to GitHub successfully!
-@REM pause
-
-
 @echo off
 cd /d D:\JB\Leetcodes
 
