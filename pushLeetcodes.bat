@@ -18,7 +18,8 @@
 
 
 @echo off
-cd /d JB\Leetcodes
+@REM cd /d JB\Leetcodes
+cd /d D:\JB\Leetcodes
 
 REM Extract date in YYYY-MM-DD format using WMIC (works consistently)
 for /f %%i in ('wmic os get localdatetime ^| find "."') do set datetime=%%i
