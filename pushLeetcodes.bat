@@ -6,7 +6,8 @@ for /f %%i in ('wmic os get localdatetime ^| find "."') do set datetime=%%i
 set today=%datetime:~0,4%-%datetime:~4,2%-%datetime:~6,2%
 
 git add .
-git commit -m "Updated Leetcode solution on %today%"
+@REM git commit -m "Updated Leetcode solution on %today%"
+git commit -m "gitignore created"
 git pull origin main --rebase
 git push origin main
 
